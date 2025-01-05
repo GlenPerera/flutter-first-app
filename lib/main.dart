@@ -10,81 +10,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "space app",
-      home: SafeArea(
-        child: Scaffold(
+        debugShowCheckedModeBanner: false,
+        title: "Space App",
+        home: Scaffold(
+          backgroundColor: Colors.black,
+          appBar: AppBar(
             backgroundColor: Colors.black,
-            body: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    width: double.infinity,
-                    height: 100,
-                    decoration: BoxDecoration(
-                        color: Colors.greenAccent,
-                        borderRadius: BorderRadius.circular(5)),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: 200,
-                        height: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.greenAccent,
-                            borderRadius: BorderRadius.circular(5)),
-                      ),
-                      Container(
-                        width: 200,
-                        height: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.greenAccent,
-                            borderRadius: BorderRadius.circular(5)),
-                      )
-                    ],
-                  ),
-                  Container(
-                    width: double.infinity,
-                    height: 100,
-                    decoration: BoxDecoration(
-                        color: Colors.greenAccent,
-                        borderRadius: BorderRadius.circular(5)),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: 100,
-                        height: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.greenAccent,
-                            borderRadius: BorderRadius.circular(5)),
-                      ),
-                      Container(
-                        width: 100,
-                        height: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.greenAccent,
-                            borderRadius: BorderRadius.circular(5)),
-                      ),
-                      Container(
-                        width: 100,
-                        height: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.greenAccent,
-                            borderRadius: BorderRadius.circular(5)),
-                      )
-                    ],
-                  ),
-                  Container(
-                      width: double.infinity,
-                      height: 100,
-                      decoration: BoxDecoration(
-                          color: Colors.greenAccent,
-                          borderRadius: BorderRadius.circular(5)))
-                ])),
-      ),
-    );
+            shadowColor: Colors.white,
+            title: Text("BLACK HOLE",
+                style: TextStyle(color: Colors.white, fontSize: 30)),
+
+                actions: [IconButton(onPressed: () {}, icon:Icon(Icons.menu))],
+          ),
+        ));
   }
 }
+
+
+
